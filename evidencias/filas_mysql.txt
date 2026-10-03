@@ -1,0 +1,10 @@
+SELECT titulo, director, anio, disponible FROM cineclub.peliculas ORDER BY id;
+
++-----------------+----------------------+------+------------+
+| titulo          | director             | anio | disponible |
++-----------------+----------------------+------+------------+
+| Cinema Paradiso | Giuseppe Tornatore   | 1988 |          1 |
+| Spirited Away   | Hayao Miyazaki       | 2001 |          1 |
+| The Godfather   | Francis Ford Coppola | 1972 |          0 |
+| Amelie          | Jean-Pierre Jeunet   | 2001 |          1 |
++-----------------+----------------------+------+------------+

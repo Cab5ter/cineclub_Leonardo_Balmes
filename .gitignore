@@ -1,0 +1,7 @@
+virtualenv/
+__pycache__/
+*.pyc
+.venv/
+.env
+.env.*
+*.db
