@@ -1,3 +1,5 @@
-strawberry-graphql[cli]
+strawberry-graphql[cli]==0.328.0
 SQLAlchemy
 PyMySQL
+uvicorn
+starlette

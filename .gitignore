@@ -1,7 +1,7 @@
 virtualenv/
+.venv/
 __pycache__/
 *.pyc
-.venv/
 .env
 .env.*
-*.db
+!.env.example

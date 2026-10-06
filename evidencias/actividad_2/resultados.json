@@ -1,0 +1,284 @@
+{
+  "suscripcion": {
+    "id": "d81f75ce-1732-4095-a22b-7b57aa078cb0",
+    "type": "next",
+    "payload": {
+      "data": {
+        "peliculaAgregada": {
+          "titulo": "The Little Prince",
+          "anio": 2015,
+          "director": {
+            "nombre": "Mark Osborne"
+          }
+        }
+      }
+    }
+  },
+  "validacion": [
+    {
+      "errors": [
+        {
+          "message": "Cannot query field 'isbn' on type 'Pelicula'.",
+          "locations": [
+            {
+              "line": 1,
+              "column": 15
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "errors": [
+        {
+          "message": "Field 'director' of type 'Director!' must have a selection of subfields. Did you mean 'director { ... }'?",
+          "locations": [
+            {
+              "line": 1,
+              "column": 15
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "errors": [
+        {
+          "message": "Field 'titulo' must not have a selection since type 'String!' has no subfields.",
+          "locations": [
+            {
+              "line": 1,
+              "column": 22
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "siglo": {
+    "data": {
+      "peliculas": [
+        {
+          "titulo": "Cinema Paradiso",
+          "anio": 1988,
+          "siglo": 20
+        },
+        {
+          "titulo": "Spirited Away",
+          "anio": 2001,
+          "siglo": 21
+        },
+        {
+          "titulo": "The Godfather",
+          "anio": 1972,
+          "siglo": 20
+        },
+        {
+          "titulo": "Amelie",
+          "anio": 2001,
+          "siglo": 21
+        },
+        {
+          "titulo": "The Little Prince",
+          "anio": 2015,
+          "siglo": 21
+        },
+        {
+          "titulo": "The Little Prince",
+          "anio": 2015,
+          "siglo": 21
+        },
+        {
+          "titulo": "The Little Prince",
+          "anio": 2015,
+          "siglo": 21
+        },
+        {
+          "titulo": "The Little Prince",
+          "anio": 2015,
+          "siglo": 21
+        },
+        {
+          "titulo": "The Little Prince",
+          "anio": 2015,
+          "siglo": 21
+        },
+        {
+          "titulo": "The Little Prince",
+          "anio": 2015,
+          "siglo": 21
+        },
+        {
+          "titulo": "The Little Prince",
+          "anio": 2015,
+          "siglo": 21
+        },
+        {
+          "titulo": "The Little Prince",
+          "anio": 2015,
+          "siglo": 21
+        }
+      ]
+    }
+  },
+  "respuesta_parcial": {
+    "data": {
+      "actual": {
+        "titulo": "The Little Prince",
+        "anio": 2015,
+        "etiqueta": "en catálogo"
+      },
+      "antigua": {
+        "titulo": "La Sortie de l'usine Lumiere a Lyon",
+        "anio": 1895,
+        "etiqueta": null
+      }
+    },
+    "errors": [
+      {
+        "message": "El catálogo no etiqueta películas anteriores a 1900",
+        "locations": [
+          {
+            "line": 10,
+            "column": 5
+          }
+        ],
+        "path": [
+          "antigua",
+          "etiqueta"
+        ]
+      }
+    ]
+  },
+  "lista_parcial": {
+    "data": {
+      "peliculas": [
+        {
+          "titulo": "Cinema Paradiso",
+          "anio": 1988,
+          "etiqueta": "en catálogo"
+        },
+        {
+          "titulo": "Spirited Away",
+          "anio": 2001,
+          "etiqueta": "en catálogo"
+        },
+        {
+          "titulo": "The Godfather",
+          "anio": 1972,
+          "etiqueta": "en catálogo"
+        },
+        {
+          "titulo": "Amelie",
+          "anio": 2001,
+          "etiqueta": "en catálogo"
+        },
+        {
+          "titulo": "The Little Prince",
+          "anio": 2015,
+          "etiqueta": "en catálogo"
+        },
+        {
+          "titulo": "The Little Prince",
+          "anio": 2015,
+          "etiqueta": "en catálogo"
+        },
+        {
+          "titulo": "The Little Prince",
+          "anio": 2015,
+          "etiqueta": "en catálogo"
+        },
+        {
+          "titulo": "The Little Prince",
+          "anio": 2015,
+          "etiqueta": "en catálogo"
+        },
+        {
+          "titulo": "The Little Prince",
+          "anio": 2015,
+          "etiqueta": "en catálogo"
+        },
+        {
+          "titulo": "The Little Prince",
+          "anio": 2015,
+          "etiqueta": "en catálogo"
+        },
+        {
+          "titulo": "The Little Prince",
+          "anio": 2015,
+          "etiqueta": "en catálogo"
+        },
+        {
+          "titulo": "The Little Prince",
+          "anio": 2015,
+          "etiqueta": "en catálogo"
+        },
+        {
+          "titulo": "La Sortie de l'usine Lumiere a Lyon",
+          "anio": 1895,
+          "etiqueta": null
+        }
+      ]
+    },
+    "errors": [
+      {
+        "message": "El catálogo no etiqueta películas anteriores a 1900",
+        "locations": [
+          {
+            "line": 1,
+            "column": 27
+          }
+        ],
+        "path": [
+          "peliculas",
+          12,
+          "etiqueta"
+        ]
+      }
+    ]
+  },
+  "introspeccion": {
+    "data": {
+      "__schema": {
+        "queryType": {
+          "name": "Query"
+        },
+        "mutationType": {
+          "name": "Mutation"
+        },
+        "subscriptionType": {
+          "name": "Subscription"
+        }
+      },
+      "pelicula": {
+        "fields": [
+          {
+            "name": "titulo"
+          },
+          {
+            "name": "director"
+          },
+          {
+            "name": "anio"
+          },
+          {
+            "name": "disponible"
+          },
+          {
+            "name": "siglo"
+          },
+          {
+            "name": "etiqueta"
+          }
+        ]
+      },
+      "suscripcion": {
+        "fields": [
+          {
+            "name": "peliculaAgregada"
+          }
+        ]
+      }
+    }
+  }
+}
